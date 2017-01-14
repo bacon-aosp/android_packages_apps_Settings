@@ -470,7 +470,7 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
         }
 
         private void updateSummary() {
-            boolean hasNavBar = Settings.System.getInt(mContext.getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED, 0) == 0;
+            boolean hasNavBar = Settings.System.getInt(mContext.getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED, 0) == 1;
             mLoader.setSummary(this, hasNavBar ? "Software keys enabled" : "Software keys disabled");
         }
     }
